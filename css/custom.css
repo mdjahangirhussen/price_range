@@ -1,0 +1,123 @@
+/*-----------------
+1. Google font
+------------------*/
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Poppins:400,700&display=swap');
+
+/*-----------------
+2. Genaral-css
+------------------*/
+a:hover {
+    text-decoration: none;
+}
+
+.v-center {
+    height: 20vh;
+    width: 100%;
+    background: #fff;
+}
+/*------------------------------------
+     pr_grid_Leftsidebar_css
+-------------------------------------*/
+
+.pr_grid_title {
+    border-bottom: 1px solid #cfcfcf;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.price_filter {
+    margin-top: 18px;
+}
+
+.ui-widget.ui-widget-content {
+    background: #c43b68 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    height: 5px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    height: 100%;
+    top: -1px;
+    background: #333333;
+    height: 6px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    background: #333333 none repeat scroll 0 0;
+    border: 1px solid #333333;
+    color: #333333;
+}
+
+.ui-slider .ui-slider-handle {
+    cursor: default;
+    height: 14px;
+    position: absolute;
+    width: 14px;
+    z-index: 2;
+    border-radius: 100%;
+}
+
+input#amount {
+    border: none;
+    color: #666666;
+    font-size: 14px;
+    width: 40%;
+}
+
+input#amount:focus {
+    outline: none;
+}
+
+label#price {
+    color: #666666;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.price-btn {
+    background: #333333;
+    color: #fff;
+    padding: 0 22px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+.price-btn:before {
+    left: 100%;
+    position: absolute;
+    content: "";
+    right: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #c43b68;
+    transition: 0.3s;
+
+}
+
+a.price-btn:hover {
+    color: #fff;
+}
+
+.price-btn:hover.price-btn:before {
+    left: 0;
+    z-index: -2;
+}
